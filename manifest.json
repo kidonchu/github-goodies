@@ -1,0 +1,20 @@
+{
+  "name": "Kidon Goodies",
+  "version": "0.1.0",
+  "description": "Kidon Goodies",
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*"],
+      "js": [ "content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "background": {
+    "scripts": [ "background.js" ]
+  },
+  "permissions": [
+    "https://github.com/*",
+    "tabs"
+  ]
+}
